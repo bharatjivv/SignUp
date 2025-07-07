@@ -11,49 +11,33 @@ Online HTML, CSS and JavaScript editor to run code online.
   <title>SignUp Form</title>
 </head>
 <body>
-  
-  
-  <header> 
-    <h1> SignUp </h1>
-  </header>
-  
-  <main class="main">
-    <form>
-      <input type="text" placeholder="Full Name" >
-      <input type="Email" placeholder="Email">
-      <input type="password" placeholder="Password">
-      <input type="password" placeholder="Confirm Password">
-        <br>
-      <input type="date" >
-      <br>
-        <input type="radio" name="placed" class="box">Student
-        <input type="radio" name="placed" class="box"> Employee
-          
-       <br>
-    	<input type="checkbox" class="box" > I agree to all the Terms and conditions
-          <br>
-          <button type="submit"> Submit </button>
-    </form>
-  </main>
-  
-  <footer> </footer>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </body>
+    <header>
+    </header>
+    <main class="mainContainer">
+      <h1 class="heading">Signup</h1>
+      <br />
+      <form action="" method="post" class="signupForm">
+        <input type="text" class="inputField" placeholder="Full Name" required="">
+        <input type="email" class="inputField" placeholder="Email" required="">
+        <input type="Password" class="inputField" placeholder="Password" required="">
+        <input type="text" class="inputField" placeholder="Confirm Password" required="">
+        <input type="date" class="inputField" placeholder="MM/DD/YYYY" required="">
+        <div class="radioContainer">
+            <input type="radio" name="work" id="Student" value="Student" required="">
+            <label for="Student">Student</label>
+            <input type="radio" name="work" id="Employee" value="Employee" required="">
+            <label for="Employee">Employee</label>
+        </div>
+        <div class="checkboxContainer">
+            <input type="checkbox" id="check" required="">
+            <label for="check">I agree to all the Terms and conditions</label>
+        </div>
+        <button class="submitBtn" type="submit">Signup</button>
+      </form>
+    </main>
+    <footer>
+    </footer>
 
+<div id="quick-start-container"></div>
+</body>
 </html>
